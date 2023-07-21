@@ -17,12 +17,12 @@
         <h1>Brooklyn Public Library</h1>
         <div class="nav-container">
             <nav class="nav">
-                <ul>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#favorites">Favorites</a></li>
-                    <li><a class="nav-link" href="#coffeeshop">Coffee shop</a></li>
-                    <li><a class="nav-link" href="#contacts">Contacts</a></li>
-                    <li><a class="nav-link" href="#library_cards">Library Card</a></li>
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#favorites">Favorites</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#coffeeshop">Coffee shop</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#contacts">Contacts</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#library_cards">Library Card</a></li>
                 </ul>
             </nav>
             <svg class="icon-profile" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,12 +32,12 @@
     </header>
     <main>
         <section class="welcome">
-            <h2>Welcome to the Brooklyn Library</h2>
+            <h2>Welcome <br> to the Brooklyn Library</h2>
         </section>
         <section class="about" id="about">
             <h3>About</h3>
-            <p>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
-            <div class="slider">
+            <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+            <div class="about__slider">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -45,155 +45,155 @@
         </section>
         <section class="favorites" id="favorites">
             <h3>Favorites</h3>
-            <p>Pick favorites of season</p>
-            <div class="seasons">
-                <u>
-                    <li>
+            <p class="favorites__text">Pick favorites of season</p>
+            <div class="favorites__seasons">
+                <u class="selector">
+                    <li class="selector__item">
                         <input type="radio" id="season_winter" name="contact" value="winter" />
                         <label for="season_winter">Winter</label>
                     </li>
-                    <li>
+                    <li class="selector__item">
                         <input type="radio" id="season_spring" name="contact" value="spring" />
                         <label for="season_winter">Spring</label>
                     </li>
-                    <li>
+                    <li class="selector__item">
                         <input type="radio" id="season_summer" name="contact" value="summer" />
                         <label for="season_winter">Summer</label>
                     </li>
-                    <li>
+                    <li class="selector__item">
                         <input type="radio" id="season_autumn" name="contact" value="autumn" />
                         <label for="season_winter">Autumn</label>
                     </li>
                 </u>
             </div>
-            <div class="books_container">
-                <div class="book_card">
+            <div class="books">
+                <div class="books__card">
                     <p>Staff Picks</p>
                     <h4><span>The Book Eaters</span>
                         By Sunyi Dean</h4>
-                    <p class="book_description">An unusual sci-fi story about a book eater woman who tries desperately
+                    <p class="books__card-description">An unusual sci-fi story about a book eater woman who tries desperately
                         to save her dangerous mind-eater son from tradition and certain death. Complete with
                         dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for
                         the faint of heart.</p>
-                    <button class="buy">Buy</button>
-                    <img src="" alt="">
+                    <button class="books__card-button">Buy</button>
+                    <img class="books__card-img" src="" alt="">
                 </div>
-                <div class="book_card">
+                <div class="books__card">
                     <p>Staff Picks</p>
                     <h4><span>Cackle</span>
                         By Rachel Harrison</h4>
-                    <p class="book_description">Are your Halloween movies of choice The Witches of Eastwick and
+                    <p class="books__card-description">Are your Halloween movies of choice The Witches of Eastwick and
                         Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a
                         quaint town in upstate New York and befriends a beautiful witch.</p>
-                    <button class="buy">Buy</button>
-                    <img src="" alt="">
+                    <button class="books__card-button">Buy</button>
+                    <img class="books__card-img" src="" alt="">
                 </div>
-                <div class="book_card">
+                <div class="books__card">
                     <p>Staff Picks</p>
                     <h4><span>Dante: Poet of the Secular World</span>
                         By Erich Auerbach</h4>
-                    <p class="book_description">Auerbach's engaging book places the 'Comedy' within the tradition of
+                    <p class="books__card-description">Auerbach's engaging book places the 'Comedy' within the tradition of
                         epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the
                         individual and his drama of soul into something of divine significance—an inspired introduction
                         to Dante's main themes.</p>
-                    <button class="buy">Buy</button>
-                    <img src="" alt="">
+                    <button class="books__card-button">Buy</button>
+                    <img class="books__card-img" src="" alt="">
                 </div>
-                <div class="book_card">
+                <div class="books__card">
                     <p>Staff Picks</p>
                     <h4><span>The Last Queen</span>
                         By Clive Irving</h4>
-                    <p class="book_description">A timely and revelatory new biography of Queen Elizabeth (and her
+                    <p class="books__card-description">A timely and revelatory new biography of Queen Elizabeth (and her
                         family) exploring how the Windsors have evolved and thrived as the modern world has changed
                         around them.</p>
-                    <button class="buy">Buy</button>
-                    <img src="" alt="">
+                    <button class="books__card-button">Buy</button>
+                    <img class="books__card-img" src="" alt="">
                 </div>
             </div>
         </section>
         <section class="coffeeshop" id="coffeeshop">
             <h3>Coffee Shop</h3>
-            <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly
+            <p class="coffeeshop__text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly
                 conversation.
                 you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you
                 can try desserts from bakery.</p>
             <div class="menu">
-                <div class="coffee_tea">
-                    <ul>
-                        <li>
+                <div class="menu__drinks">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
                             <div>
-                                <p>Cold Brew Coffee</p>
-                                <p class="menu_price">$3</p>
+                                <p class="menu__list-product">Cold Brew Coffee</p>
+                                <p class="menu__list-price">$3</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>French Press Pot</p>
-                                <p class="menu_price">$5</p>
+                                <p class="menu__list-product">French Press Pot</p>
+                                <p class="menu__list-price">$5</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Espresso</p>
-                                <p class="menu_price">$2</p>
+                                <p class="menu__list-product">Espresso</p>
+                                <p class="menu__list-price">$2</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Cappuccino</p>
-                                <p class="menu_price">$4</p>
+                                <p class="menu__list-product">Cappuccino</p>
+                                <p class="menu__list-price">$4</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Hot tea</p>
-                                <p class="menu_price">$2</p>
+                                <p class="menu__list-product">Hot tea</p>
+                                <p class="menu__list-price">$2</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Cold tea</p>
-                                <p class="menu_price">$2</p>
+                                <p class="menu__list-product">Cold tea</p>
+                                <p class="menu__list-price">$2</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="desserts_cakes">
-                    <ul>
-                        <li>
+                <div class="menu__desserts">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
                             <div>
-                                <p>Forest Gateau</p>
-                                <p class="menu_price">$16</p>
+                                <p class="menu__list-product">Forest Gateau</p>
+                                <p class="menu__list-price">$16</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Blue Moon</p>
-                                <p class="menu_price">$16</p>
+                                <p class="menu__list-product">Blue Moon</p>
+                                <p class="menu__list-price">$16</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Blue Moon</p>
-                                <p class="menu_price">$15</p>
+                                <p class="menu__list-product">Blue Moon</p>
+                                <p class="menu__list-price">$15</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Chocolate Cake</p>
-                                <p class="menu_price">$18</p>
+                                <p class="menu__list-product">Chocolate Cake</p>
+                                <p class="menu__list-price">$18</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Poet’s Dream Cake</p>
-                                <p class="menu_price">$16</p>
+                                <p class="menu__list-product">Poet’s Dream Cake</p>
+                                <p class="menu__list-price">$16</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="menu__list-item">
                             <div>
-                                <p>Pineapple Cake</p>
-                                <p class="menu_price">$14</p>
+                                <p class="menu__list-product">Pineapple Cake</p>
+                                <p class="menu__list-price">$14</p>
                             </div>
                         </li>
                     </ul>
@@ -202,14 +202,14 @@
         </section>
         <section class="contacts" id="contacts">
             <h3>Our Contacts</h3>
-            <div class="contacts_container">
+            <div class="contacts__container">
                 <div class="contacts_info">
 
                 </div>
                 <img src="" alt="">
             </div>
         </section>
-        <section class="library_cards" id="library_cards">
+        <section class="librarycards" id="library_cards">
             <h3>Digital Library Cards</h3>
         </section>
     </main>

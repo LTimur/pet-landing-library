@@ -24,7 +24,7 @@ h1 {
     margin-left: 20px;
 }
 
-.nav ul, .nav-container {
+.nav__list, .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,11 +34,11 @@ h1 {
     gap: 40px;
 }
 
-.nav ul {
+.nav__list {
     gap: 30px;
 }
 
-.nav-link {
+.nav__link {
     color: #FFF;
     font-family: Inter;
     font-size: 20px;
@@ -78,3 +78,5 @@ h2 {
     position: relative;
     top: 220px;
 }
+
+/* Section About */
