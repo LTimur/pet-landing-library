@@ -83,7 +83,7 @@ body {
   /* Section About */
   
   .about {
-    height: 837px;
+    height: 817px;
   }
   
   h3 {
@@ -106,12 +106,12 @@ body {
     left: 695px;
     bottom: -20px;
     width: 50px;
-    height: 2px;
+    height: 1px;
     background-color: #0c0c0e;
   }
   
   .about__text {
-    margin-top: 40px;
+    margin-top: 61px;
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -144,5 +144,153 @@ body {
     border-radius: 50%;
   }
   .about__slider-button--active {
-      background: #BB945F;
-    }
+    background: #bb945f;
+  }
+  
+  /* Section Favorites */
+  
+  .favorites {
+    height: 1439px;
+  }
+  
+  .favorites__text {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 61px 0 0 20px;
+  }
+  
+  .favorites__seasons {
+    display: flex;
+    margin: 40px 0 0 20px;
+    gap: 90px;
+  }
+  
+  .favorites__seasons-input {
+      accent-color: black;
+  }
+  
+  .favorites__seasons-input:checked ~ .favorites__seasons-label {
+      font-weight: 700;
+  }
+  
+  .favorites__seasons label {
+      color: #000;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+  
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    gap: 40px 260px;
+  }
+  
+  .books__card {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+    position: relative;
+  }
+  
+  .books__card-wrapper {
+    margin-left: 20px;
+      height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерное распределение контента внутри обертки */
+  }
+  
+  .books__card-bookname {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  
+  .books__card-tag {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 15px;
+  }
+  
+  .books__card-tag::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 60px;
+    height: 1px;
+    background-color: #bb945f;
+  }
+  
+  h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  
+  .books__card-description {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 355px;
+    margin-top: 20px;
+  }
+  
+  .books__card-button {
+    color: #0c0c0e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0c0c0e;
+    background-color: white;
+    margin-bottom: 15px;
+  }
+  
+  .books__card-img {
+    position: absolute;
+    top: 256px;
+    left: 390px;
+    width: 200px;
+    height: 300px;
+  }
