@@ -1,296 +1,391 @@
 body {
-    width: 1440px;
-    margin: 0 auto;
-  }
-  
-  /* Header */
-  
-  .header {
-    background-color: black;
-    display: flex;
-    height: 90px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  h1 {
-    color: #fff;
-    font-family: Forum;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px; /* 166.667% */
-    letter-spacing: 0.6px;
-    margin-left: 20px;
-  }
-  
-  .nav__list,
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .nav-container {
-    gap: 40px;
-  }
-  
-  .nav__list {
-    gap: 30px;
-  }
-  
-  .nav__link {
-    color: #fff;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px; /* 250% */
-    text-decoration: none;
-  }
-  
-  .icon-profile {
-    margin-right: 20px;
-  }
-  
-  /* Section Welcome */
-  
-  .welcome {
-    height: 600px;
-    background-image: url("assets/Welcome.png");
-  }
-  
-  h2 {
-    color: #fff;
-    text-align: center;
-    font-family: Forum;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 50px; /* 125% */
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    background-color: black;
-  
-    width: 520px;
-    height: 150px;
-    padding: 35px 40px;
-  
-    position: relative;
-    top: 220px;
-  }
-  
-  /* Section About */
-  
-  .about {
-    height: 817px;
-  }
-  
-  h3 {
-    margin-top: 20px;
-    color: #0c0c0e;
-    font-family: Forum;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 100% */
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    text-align: center;
-    position: relative;
-  }
-  
-  h3::after {
-    content: "";
-    position: absolute;
-    left: 695px;
-    bottom: -20px;
-    width: 50px;
-    height: 1px;
-    background-color: #0c0c0e;
-  }
-  
-  .about__text {
-    margin-top: 61px;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 200% */
-  }
-  
-  .about__slider {
-    margin-top: 20px;
-  }
-  
-  .about__slider-images {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .about__slider-controls {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .about__slider-button {
-    background-color: #0c0c0e;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-  }
-  .about__slider-button--active {
-    background: #bb945f;
-  }
-  
-  /* Section Favorites */
-  
-  .favorites {
-    height: 1439px;
-  }
-  
-  .favorites__text {
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 61px 0 0 20px;
-  }
-  
-  .favorites__seasons {
-    display: flex;
-    margin: 40px 0 0 20px;
-    gap: 90px;
-  }
-  
-  .favorites__seasons-input {
-      accent-color: black;
-  }
-  
-  .favorites__seasons-input:checked ~ .favorites__seasons-label {
-      font-weight: 700;
-  }
-  
-  .favorites__seasons label {
-      color: #000;
-      font-family: Inter;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-  }
-  
-  .books {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 40px;
-    gap: 40px 260px;
-  }
-  
-  .books__card {
-    width: 550px;
-    height: 555px;
-    flex-shrink: 0;
-    border: 1px solid #000;
-    position: relative;
-  }
-  
-  .books__card-wrapper {
-    margin-left: 20px;
-      height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Равномерное распределение контента внутри обертки */
-  }
-  
-  .books__card-bookname {
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 266.667% */
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 20px;
-  }
-  
-  .books__card-tag {
-    color: #000;
-    font-family: Forum;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 200% */
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    position: relative;
-    margin-top: 15px;
-  }
-  
-  .books__card-tag::after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -2px;
-    width: 60px;
-    height: 1px;
-    background-color: #bb945f;
-  }
-  
-  h4 {
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    margin-top: 20px;
-  }
-  
-  .books__card-description {
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px; /* 266.667% */
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    width: 355px;
-    margin-top: 20px;
-  }
-  
-  .books__card-button {
-    color: #0c0c0e;
-    text-align: center;
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    width: 75px;
-    height: 30px;
-    border-radius: 2px;
-    border: 1px solid #0c0c0e;
-    background-color: white;
-    margin-bottom: 15px;
-  }
-  
-  .books__card-img {
-    position: absolute;
-    top: 256px;
-    left: 390px;
-    width: 200px;
-    height: 300px;
-  }
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  background-color: black;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #fff;
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+  margin-left: 20px;
+}
+
+.nav__list,
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-container {
+  gap: 40px;
+}
+
+.nav__list {
+  gap: 30px;
+}
+
+.nav__link {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 250% */
+  text-decoration: none;
+}
+
+.icon-profile {
+  margin-right: 20px;
+}
+
+/* Section Welcome */
+
+.welcome {
+  height: 600px;
+  background-image: url("assets/Welcome.png");
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 125% */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: black;
+
+  width: 520px;
+  height: 150px;
+  padding: 35px 40px;
+
+  position: relative;
+  top: 220px;
+}
+
+/* Section About */
+
+.about {
+  height: 817px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  position: relative;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: 695px;
+  bottom: -20px;
+  width: 50px;
+  height: 2px;
+  background-color: #0c0c0e;
+}
+
+.about__text {
+  margin-top: 61px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+}
+
+.about__slider {
+  margin-top: 20px;
+}
+
+.about__slider-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about__slider-controls {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about__slider-button {
+  background-color: #0c0c0e;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.about__slider-button--active {
+  background: #bb945f;
+}
+
+/* Section Favorites */
+
+.favorites {
+  height: 1439px;
+}
+
+.favorites__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 61px 0 0 20px;
+}
+
+.favorites__seasons {
+  display: flex;
+  margin: 40px 0 0 20px;
+  gap: 90px;
+}
+
+.favorites__seasons-input {
+  accent-color: black;
+}
+
+.favorites__seasons-input:checked ~ .favorites__seasons-label {
+  font-weight: 700;
+}
+
+.favorites__seasons label {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 40px 260px;
+}
+
+.books__card {
+  width: 550px;
+  height: 555px;
+  flex-shrink: 0;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.books__card-wrapper {
+  margin-left: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Равномерное распределение контента внутри обертки */
+}
+
+.books__card-bookname {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.books__card-tag {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 15px;
+}
+
+.books__card-tag::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  width: 60px;
+  height: 1px;
+  background-color: #bb945f;
+}
+
+h4 {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+.books__card-description {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 355px;
+  margin-top: 20px;
+}
+
+.books__card-button {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.books__card-img {
+  position: absolute;
+  top: 256px;
+  left: 390px;
+  width: 200px;
+  height: 300px;
+}
+
+/* Section Cofeeshop */
+
+.coffeeshop {
+  height: 841px;
+}
+
+.coffeeshop__text {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+
+.menu {
+  margin-top: 40px;
+  display: flex;
+  gap: 428px;
+  justify-content: space-between;
+}
+
+.menu__desserts,
+.menu__drinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__desserts .menu__title {
+  text-align: right;
+}
+.menu__title {
+  color: #bb945f;
+  font-family: Forum;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.menu__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu__list-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu__desserts .menu__list-item {
+  justify-content: end;
+}
+
+.menu__list-line {
+  width: 100px;
+  height: 1px;
+}
+.menu__drinks .menu__list-product {
+  width: 199px;
+}
+
+.menu__list-product {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.menu__list-price {
+  color: #000;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
