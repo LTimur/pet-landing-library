@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Library</title>
 </head>
 
@@ -18,29 +19,56 @@
         <div class="nav-container">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__link" href="#about">About</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="#favorites">Favorites</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="#coffeeshop">Coffee shop</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="#contacts">Contacts</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="#library_cards">Library Card</a></li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#about">About</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#favorites">Favorites</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#coffeeshop">Coffee shop</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#contacts">Contacts</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__link" href="#library_cards">Library Card</a>
+                    </li>
                 </ul>
             </nav>
-            <svg class="icon-profile" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z" fill="white"/>
-              </svg>
+            <svg class="icon-profile" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
+                    fill="white" />
+            </svg>
         </div>
     </header>
     <main>
         <section class="welcome">
-            <h2>Welcome <br> to the Brooklyn Library</h2>
+            <h2>
+                Welcome <br />
+                to the Brooklyn Library
+            </h2>
         </section>
         <section class="about" id="about">
             <h3>About</h3>
-            <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+            <p class="about__text">
+                The Brooklyn Library is a free workspace, a large number of books and
+                a cozy coffee shop inside
+            </p>
             <div class="about__slider">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <div class="about__slider-images">
+                    <img class="about__slider-img" src="assets/library1.png" alt="library1" />
+                    <img class="about__slider-img" src="assets/library2.png" alt="library2" />
+                    <img class="about__slider-img" src="assets/library3.png" alt="library3" />
+                </div>
+
+                <div class="about__slider-controls">
+                    <div class="about__slider-button about__slider-button--active"></div>
+                    <div class="about__slider-button"></div>
+                    <div class="about__slider-button"></div>
+                </div>
             </div>
         </section>
         <section class="favorites" id="favorites">
@@ -69,54 +97,65 @@
             <div class="books">
                 <div class="books__card">
                     <p>Staff Picks</p>
-                    <h4><span>The Book Eaters</span>
-                        By Sunyi Dean</h4>
-                    <p class="books__card-description">An unusual sci-fi story about a book eater woman who tries desperately
-                        to save her dangerous mind-eater son from tradition and certain death. Complete with
-                        dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for
-                        the faint of heart.</p>
+                    <h4><span>The Book Eaters</span> By Sunyi Dean</h4>
+                    <p class="books__card-description">
+                        An unusual sci-fi story about a book eater woman who tries
+                        desperately to save her dangerous mind-eater son from tradition
+                        and certain death. Complete with dysfunctional family values,
+                        light Sapphic romance, and a strong, complex protagonist. Not for
+                        the faint of heart.
+                    </p>
                     <button class="books__card-button">Buy</button>
-                    <img class="books__card-img" src="" alt="">
+                    <img class="books__card-img" src="" alt="" />
                 </div>
                 <div class="books__card">
                     <p>Staff Picks</p>
-                    <h4><span>Cackle</span>
-                        By Rachel Harrison</h4>
-                    <p class="books__card-description">Are your Halloween movies of choice The Witches of Eastwick and
-                        Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a
-                        quaint town in upstate New York and befriends a beautiful witch.</p>
+                    <h4><span>Cackle</span> By Rachel Harrison</h4>
+                    <p class="books__card-description">
+                        Are your Halloween movies of choice The Witches of Eastwick and
+                        Practical Magic? Look no further than here - where a woman
+                        recovering from a breakup moves to a quaint town in upstate New
+                        York and befriends a beautiful witch.
+                    </p>
                     <button class="books__card-button">Buy</button>
-                    <img class="books__card-img" src="" alt="">
+                    <img class="books__card-img" src="" alt="" />
                 </div>
                 <div class="books__card">
                     <p>Staff Picks</p>
-                    <h4><span>Dante: Poet of the Secular World</span>
-                        By Erich Auerbach</h4>
-                    <p class="books__card-description">Auerbach's engaging book places the 'Comedy' within the tradition of
-                        epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the
-                        individual and his drama of soul into something of divine significance—an inspired introduction
-                        to Dante's main themes.</p>
+                    <h4>
+                        <span>Dante: Poet of the Secular World</span> By Erich Auerbach
+                    </h4>
+                    <p class="books__card-description">
+                        Auerbach's engaging book places the 'Comedy' within the tradition
+                        of epic, tragedy, and philosophy in general, arguing for Dante's
+                        uniqueness as one who raised the individual and his drama of soul
+                        into something of divine significance—an inspired introduction to
+                        Dante's main themes.
+                    </p>
                     <button class="books__card-button">Buy</button>
-                    <img class="books__card-img" src="" alt="">
+                    <img class="books__card-img" src="" alt="" />
                 </div>
                 <div class="books__card">
                     <p>Staff Picks</p>
-                    <h4><span>The Last Queen</span>
-                        By Clive Irving</h4>
-                    <p class="books__card-description">A timely and revelatory new biography of Queen Elizabeth (and her
-                        family) exploring how the Windsors have evolved and thrived as the modern world has changed
-                        around them.</p>
+                    <h4><span>The Last Queen</span> By Clive Irving</h4>
+                    <p class="books__card-description">
+                        A timely and revelatory new biography of Queen Elizabeth (and her
+                        family) exploring how the Windsors have evolved and thrived as the
+                        modern world has changed around them.
+                    </p>
                     <button class="books__card-button">Buy</button>
-                    <img class="books__card-img" src="" alt="">
+                    <img class="books__card-img" src="" alt="" />
                 </div>
             </div>
         </section>
         <section class="coffeeshop" id="coffeeshop">
             <h3>Coffee Shop</h3>
-            <p class="coffeeshop__text">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly
-                conversation.
-                you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you
-                can try desserts from bakery.</p>
+            <p class="coffeeshop__text">
+                In our library, we have of cozy coffee shop, welcoming in customers
+                with frothy cappuccinos and friendly conversation. you can get a
+                favorite book and read in coffee shop. Our barista to cook you best
+                coffee, and also you can try desserts from bakery.
+            </p>
             <div class="menu">
                 <div class="menu__drinks">
                     <ul class="menu__list">
@@ -203,19 +242,15 @@
         <section class="contacts" id="contacts">
             <h3>Our Contacts</h3>
             <div class="contacts__container">
-                <div class="contacts_info">
-
-                </div>
-                <img src="" alt="">
+                <div class="contacts_info"></div>
+                <img src="" alt="" />
             </div>
         </section>
         <section class="librarycards" id="library_cards">
             <h3>Digital Library Cards</h3>
         </section>
     </main>
-    <footer class="footer">
-
-    </footer>
+    <footer class="footer"></footer>
 </body>
 
 </html>

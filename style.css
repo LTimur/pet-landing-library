@@ -1,20 +1,20 @@
 body {
     width: 1440px;
     margin: 0 auto;
-}
-
-/* Header */
-
-.header {
+  }
+  
+  /* Header */
+  
+  .header {
     background-color: black;
     display: flex;
     height: 90px;
     align-items: center;
     justify-content: space-between;
-}
-
-h1 {
-    color: #FFF;
+  }
+  
+  h1 {
+    color: #fff;
     font-family: Forum;
     font-size: 30px;
     font-style: normal;
@@ -22,45 +22,46 @@ h1 {
     line-height: 50px; /* 166.667% */
     letter-spacing: 0.6px;
     margin-left: 20px;
-}
-
-.nav__list, .nav-container {
+  }
+  
+  .nav__list,
+  .nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.nav-container {
+  }
+  
+  .nav-container {
     gap: 40px;
-}
-
-.nav__list {
+  }
+  
+  .nav__list {
     gap: 30px;
-}
-
-.nav__link {
-    color: #FFF;
+  }
+  
+  .nav__link {
+    color: #fff;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px; /* 250% */
     text-decoration: none;
-}
-
-.icon-profile {
+  }
+  
+  .icon-profile {
     margin-right: 20px;
-}
-
-/* Section Welcome */
-
-.welcome {
+  }
+  
+  /* Section Welcome */
+  
+  .welcome {
     height: 600px;
-    background-image: url('assets/Welcome.png');
-}
-
-h2 {
-    color: #FFF;
+    background-image: url("assets/Welcome.png");
+  }
+  
+  h2 {
+    color: #fff;
     text-align: center;
     font-family: Forum;
     font-size: 40px;
@@ -70,13 +71,78 @@ h2 {
     letter-spacing: 3px;
     text-transform: uppercase;
     background-color: black;
-
+  
     width: 520px;
     height: 150px;
     padding: 35px 40px;
-
+  
     position: relative;
     top: 220px;
-}
-
-/* Section About */
+  }
+  
+  /* Section About */
+  
+  .about {
+    height: 837px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    color: #0c0c0e;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+  }
+  
+  h3::after {
+    content: "";
+    position: absolute;
+    left: 695px;
+    bottom: -20px;
+    width: 50px;
+    height: 2px;
+    background-color: #0c0c0e;
+  }
+  
+  .about__text {
+    margin-top: 40px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+  }
+  
+  .about__slider {
+    margin-top: 20px;
+  }
+  
+  .about__slider-images {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .about__slider-controls {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .about__slider-button {
+    background-color: #0c0c0e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  .about__slider-button--active {
+      background: #BB945F;
+    }
