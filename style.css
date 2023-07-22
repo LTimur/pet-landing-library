@@ -106,7 +106,7 @@ h3::after {
   left: 695px;
   bottom: -20px;
   width: 50px;
-  height: 2px;
+  height: 1px;
   background-color: #0c0c0e;
 }
 
@@ -388,4 +388,49 @@ h4 {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+
+/* Section Contacts */
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 201px;
+  margin-top: 61px;
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__info-text span {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.contacts__info-text {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 200% */
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.contacts__info-text:nth-child(1),
+.contacts__info-text:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+.contacts__map {
+  width: 696px;
+  height: 414px;
 }
