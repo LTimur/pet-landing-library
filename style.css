@@ -603,3 +603,79 @@ h4 {
   line-height: normal;
   letter-spacing: 1px;
 }
+
+/* Footer */
+
+.footer {
+  background-color: #0c0c0e;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 20px 0 0 20px;
+}
+.footer__address {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+  width: 229px;
+  flex-shrink: 0;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__top-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 20px 20px 0 0;
+}
+.footer__top-timetable {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
+}
+
+.footer__line {
+  width: 1400px;
+  height: 1px;
+  margin: 30px 0 0 20px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px 20px 0 20px;
+  padding-bottom: 44px;
+}
+
+.footer__bottom-year,
+.footer__bottom-logo,
+.footer__bottom-username {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 2px;
+}
