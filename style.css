@@ -632,7 +632,7 @@ h3 {
   width: 229px;
   flex-shrink: 0;
 }
-.social {
+.sociallinks {
   display: flex;
   gap: 15px;
 }
@@ -670,7 +670,7 @@ h3 {
 .footer__bottom-year,
 .footer__bottom-logo,
 .footer__bottom-username {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 20px;
