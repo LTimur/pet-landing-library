@@ -60,7 +60,7 @@ h1 {
   background-image: url("assets/Welcome.png");
 }
 
-h2 {
+.welcome__text {
   color: #fff;
   text-align: center;
   font-family: Forum;
@@ -86,7 +86,7 @@ h2 {
   height: 817px;
 }
 
-h3 {
+h2 {
   margin-top: 20px;
   color: #0c0c0e;
   font-family: Forum;
@@ -100,7 +100,7 @@ h3 {
   position: relative;
 }
 
-h3::after {
+h2::after {
   content: "";
   position: absolute;
   left: 695px;
@@ -245,7 +245,7 @@ h3::after {
   background-color: #bb945f;
 }
 
-h4 {
+h3 {
   color: #000;
   font-family: Inter;
   font-size: 15px;
