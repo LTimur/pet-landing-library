@@ -171,6 +171,9 @@ h2::after {
 
 .favorites__seasons-input {
   accent-color: black;
+  margin-right: 20px;
+  width: 17px;
+  height: 17px;
 }
 
 .favorites__seasons-input:checked ~ .favorites__seasons-label {
@@ -184,6 +187,11 @@ h2::after {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.favorites__seasons-input,
+.favorites__seasons label:hover {
+  cursor: pointer;
 }
 
 .books {
@@ -542,7 +550,7 @@ h3 {
   background-color: white;
   width: 242px;
   height: 44px;
-  
+
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -671,7 +679,7 @@ h3 {
 .footer__bottom-year,
 .footer__bottom-logo,
 .footer__bottom-username {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 20px;
