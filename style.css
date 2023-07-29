@@ -344,7 +344,6 @@ h3 {
   border: 1px solid #bb945f;
 }
 
-
 .books__card-img {
   position: absolute;
   top: 256px;
@@ -474,6 +473,7 @@ h3 {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 .contacts__info-text {
@@ -485,6 +485,16 @@ h3 {
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+
+.contacts__info-phonenumber {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__info-mail {
+  text-decoration: none;
+  color: #000;
 }
 
 .contacts__info-text:nth-child(1),
