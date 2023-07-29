@@ -309,6 +309,42 @@ h3 {
   margin-bottom: 15px;
 }
 
+.books__card-button:hover {
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  cursor: pointer;
+}
+
+.books__card-button--disabled {
+  color: #bb945f;
+  background: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+}
+
+.books__card-button--disabled:hover {
+  color: #bb945f;
+  background: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+}
+
+
 .books__card-img {
   position: absolute;
   top: 256px;
