@@ -137,6 +137,16 @@ h2::after {
   gap: 10px;
 }
 
+.about__slider-buttonwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 .about__slider-button {
   background-color: #0c0c0e;
   width: 16px;
