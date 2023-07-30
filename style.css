@@ -11,6 +11,13 @@ body {
   display: none;
 }
 
+.button-primary:hover {
+  border-radius: 2px;
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  cursor: pointer;
+}
+
 /* Header */
 
 .header {
@@ -311,13 +318,6 @@ h3 {
   border: 1px solid #0c0c0e;
   background-color: white;
   margin-bottom: 15px;
-}
-
-.books__card-button:hover {
-  border-radius: 2px;
-  border: 1px solid #bb945f;
-  background: #bb945f;
-  cursor: pointer;
 }
 
 .books__card-button--disabled {
