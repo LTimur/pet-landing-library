@@ -66,6 +66,7 @@ h1 {
 
 .icon-profile {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 /* Section Welcome */
