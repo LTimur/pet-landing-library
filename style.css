@@ -527,6 +527,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 61px;
+  margin-bottom: 40px;
 }
 
 .findcard__title {
@@ -734,9 +735,10 @@ h3 {
 }
 
 .footer__line {
-  width: 1400px;
+  display: block;
   height: 1px;
-  margin: 30px 0 0 20px;
+  width: 95%;
+  margin: 20px auto;
 }
 
 .footer__bottom {
