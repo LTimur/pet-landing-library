@@ -523,10 +523,6 @@ h3 {
 
 /* Section Library Cards */
 
-.librarycards {
-  height: 614px;
-}
-
 .librarycards-container {
   display: flex;
   justify-content: space-between;
@@ -849,5 +845,23 @@ h3 {
   }
   .contacts__map {
     margin: 0 auto;
+  }
+
+  /* Library Cards */
+  .librarycards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    margin-bottom: 40px;
+  }
+  .login {
+    width: 600px;
+  }
+  .login__title,
+  .login__text {
+    text-align: center;
+  }
+  .login__buttons {
+    justify-content: center;
   }
 }
