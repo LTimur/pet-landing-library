@@ -362,7 +362,7 @@ h3 {
 /* Section Cofeeshop */
 
 .coffeeshop {
-  height: 841px;
+  margin-top: 40px;
 }
 
 .coffeeshop__text {
@@ -383,6 +383,8 @@ h3 {
   display: flex;
   gap: 428px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .menu__desserts,
@@ -417,9 +419,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
 }
-
+.menu__drinks .menu__list-item {
+  justify-content: start;
+}
 .menu__desserts .menu__list-item {
   justify-content: end;
 }
@@ -822,6 +826,19 @@ h3 {
   .favorites__seasons-label {
     display: flex;
     align-items: center;
+  }
+
+  /* Coffeeshop */
+
+  .coffeeshop__text {
+    margin: 0 20px;
+  }
+
+  .menu {
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 40px;
+    flex-direction: column;
   }
 
 }
