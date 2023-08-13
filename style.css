@@ -3,12 +3,8 @@ html {
 }
 
 body {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
-}
-
-.hidden {
-  display: none;
 }
 
 .button-primary:hover {
@@ -44,6 +40,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  @
 }
 
 .nav-container {
@@ -67,6 +64,10 @@ h1 {
 .icon-profile {
   margin-right: 20px;
   cursor: pointer;
+}
+
+.burger {
+  display: none;
 }
 
 /* Section Welcome */
@@ -143,10 +144,11 @@ h2::after {
 .about__slider-images {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .about__slider-controls {
-  margin-top: 40px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -175,7 +177,7 @@ h2::after {
 /* Section Favorites */
 
 .favorites {
-  height: 1439px;
+  margin-top: 40px;
 }
 
 .favorites__text {
@@ -192,6 +194,7 @@ h2::after {
   display: flex;
   margin: 40px 0 0 20px;
   gap: 90px;
+  flex-wrap: wrap;
 }
 
 .favorites__seasons-input {
@@ -756,9 +759,20 @@ h3 {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
+
+  .media-hidden {
+    display: none;
+  }
+  .media-shown {
+    display: block;
+  }
   
   /* Header */
   .header {
@@ -779,4 +793,35 @@ h3 {
   .welcome {
     background-image: url("assets/Welcome768.png");
   }
+
+  /* About */
+  .about__text {
+    margin: 0 20px;
+  }
+
+  .about__slider-leftarrow,
+  .about__slider-rightarrow {
+    display: block;
+  }
+
+  .about__slider-leftarrow:hover,
+  .about__slider-rightarrow:hover {
+    cursor: pointer;
+  }
+
+  .about__slider-buttonwrapper {
+    display: flex;
+  }
+
+  /* Favorites */
+
+  .favorites__seasons {
+    gap: 40px;
+  }
+
+  .favorites__seasons-label {
+    display: flex;
+    align-items: center;
+  }
+
 }

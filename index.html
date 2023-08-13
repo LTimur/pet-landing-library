@@ -42,10 +42,11 @@
                     d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
                     fill="white" />
             </svg>
-            <svg class="burger" width="45" height="22" viewBox="0 0 45 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1" x2="45" y2="1" stroke="white" stroke-width="2"/>
-                <line y1="11" x2="45" y2="11" stroke="white" stroke-width="2"/>
-                <line y1="21" x2="45" y2="21" stroke="white" stroke-width="2"/>
+            <svg class="burger" width="45" height="22" viewBox="0 0 45 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line y1="1" x2="45" y2="1" stroke="white" stroke-width="2" />
+                <line y1="11" x2="45" y2="11" stroke="white" stroke-width="2" />
+                <line y1="21" x2="45" y2="21" stroke="white" stroke-width="2" />
             </svg>
         </div>
     </header>
@@ -64,9 +65,18 @@
             </p>
             <div class="about__slider">
                 <div class="about__slider-images">
+                    <svg class="about__slider-leftarrow hidden" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                     <img class="about__slider-img" src="assets/library1.png" alt="library1">
-                    <img class="about__slider-img" src="assets/library2.png" alt="library2">
-                    <img class="about__slider-img" src="assets/library3.png" alt="library3">
+                    <svg class="about__slider-rightarrow hidden" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <img class="about__slider-img media-hidden" src="assets/library2.png" alt="library2">
+                    <img class="about__slider-img media-hidden" src="assets/library3.png" alt="library3">
                 </div>
                 <div class="about__slider-controls">
                     <div class="about__slider-buttonwrapper">
@@ -77,6 +87,12 @@
                     </div>
                     <div class="about__slider-buttonwrapper">
                         <div class="about__slider-button"></div>
+                    </div>
+                    <div class="about__slider-buttonwrapper hidden media-shown">
+                        <div class="about__slider-button hidden media-shown"></div>
+                    </div>
+                    <div class="about__slider-buttonwrapper hidden media-shown">
+                        <div class="about__slider-button hidden media-shown"></div>
                     </div>
                 </div>
             </div>
@@ -495,10 +511,10 @@
                         <div class="findcard__container">
                             <p class="findcard__text">Brooklyn Public Library</p>
                             <form action="#" class="findcard__form">
-                                <input class="findcard__form-input" type="text" name="name" id="name" pattern="[a-zA-Z0-9-]*" required
-                                    placeholder="Reader's name ">
-                                <input class="findcard__form-input" type="text" name="number" id="number" pattern="[a-zA-Z0-9-]*" required
-                                    placeholder="Card number">
+                                <input class="findcard__form-input" type="text" name="name" id="name"
+                                    pattern="[a-zA-Z0-9-]*" required placeholder="Reader's name ">
+                                <input class="findcard__form-input" type="text" name="number" id="number"
+                                    pattern="[a-zA-Z0-9-]*" required placeholder="Card number">
                                 <button class="findcard__form-button button-primary">Check the card</button>
                             </form>
                         </div>
