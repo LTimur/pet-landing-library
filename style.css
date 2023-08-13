@@ -102,7 +102,7 @@ h1 {
   height: 817px;
 }
 
-h2:first-child {
+.about h2 {
   margin-top: 20px;
 }
 
