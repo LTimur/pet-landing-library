@@ -117,13 +117,12 @@ h2 {
 }
 
 h2::after {
+  display: block;
   content: "";
-  position: absolute;
-  left: 695px;
-  bottom: -20px;
   width: 50px;
   height: 1px;
-  background-color: #0c0c0e;
+  margin: 18px auto 47px auto;
+  background-color: #0C0C0E;
 }
 
 .about__text {
@@ -755,4 +754,29 @@ h3 {
   line-height: 20px; /* 100% */
   letter-spacing: 2px;
   text-decoration: none;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  
+  /* Header */
+  .header {
+    max-width: 768px;
+  }
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-right: 20px;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+
+  /* Welcome */
+  .welcome {
+    background-image: url("assets/Welcome768.png");
+  }
 }
