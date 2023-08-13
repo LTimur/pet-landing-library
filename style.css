@@ -98,10 +98,6 @@ h1 {
 
 /* Section About */
 
-.about {
-  height: 817px;
-}
-
 .about h2 {
   margin-top: 20px;
 }
@@ -148,6 +144,8 @@ h2::after {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 25px 10px;
 }
 
 .about__slider-controls {
