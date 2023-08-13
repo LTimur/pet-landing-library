@@ -102,8 +102,12 @@ h1 {
   height: 817px;
 }
 
-h2 {
+h2:first-child {
   margin-top: 20px;
+}
+
+h2 {
+  margin-top: 60px;
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
