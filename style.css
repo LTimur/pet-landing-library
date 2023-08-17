@@ -781,12 +781,48 @@ h3 {
   .nav {
     display: none;
   }
-  .burger {
+
+  /* Burger */
+  .burger-icon {
     display: block;
     margin-right: 20px;
   }
-  .burger:hover {
+  .burger-icon:hover {
     cursor: pointer;
+  }
+  .burger-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    top: 0;
+    width: 332px;
+    height: 570px;
+    background-color: black;
+  }
+  .burger-buttons {
+    display: flex;
+    gap: 20px;
+    margin: 31px 20px 0 212px;
+    align-items: center;
+  }
+  .burger-buttons.icon-profile {
+    width: 28px;
+    height: 28px;
+  }
+  .burger-close {
+    width: 32px;
+    height: 32px;
+  }
+  .burger-close:hover {
+    cursor: pointer;
+  }
+  .burger-nav {
+    margin-top: 41px;
+  }
+  .burger-nav__list {
+    flex-direction: column;
+    gap: 30px;
   }
 
   /* Welcome */
