@@ -65,7 +65,8 @@ h1 {
   cursor: pointer;
 }
 
-.burger {
+.burger-icon,
+.burger-menu {
   display: none;
 }
 
@@ -823,6 +824,33 @@ h3 {
   .burger-nav__list {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .roll-down-animation {
+    animation-name: rollDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .roll-up-animation {
+    animation-name: rollUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes rollDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes rollUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
   }
 
   /* Welcome */
