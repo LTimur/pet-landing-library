@@ -243,16 +243,32 @@ h2::after {
 .favorites__seasons label:hover {
   cursor: pointer;
 }
+.seasons {
+  position: relative;
+  margin-top: 40px;
+  height: 1140px;
+}
+
+.books__season {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.books__season.visible {
+  opacity: 1;
+}
 
 .books {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 40px;
   gap: 40px 260px;
+  overflow: hidden;
 }
 
 .books__card {
+
   width: 550px;
   height: 555px;
   flex-shrink: 0;
@@ -914,6 +930,10 @@ h3 {
   }
 
   /* Favorites */
+
+  .seasons {
+    height: 2340px;
+  }
 
   .favorites__seasons {
     gap: 40px;

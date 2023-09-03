@@ -85,3 +85,23 @@ function slideRightSlider() {
 
 sliderLeftButton.addEventListener("click", slideLeftSlider);
 sliderRightButton.addEventListener("click", slideRightSlider);
+
+/* Books cards */
+
+const seasonButtons = document.querySelectorAll(".favorites__seasons-input");
+const booksSeason = document.querySelectorAll(".books__season");
+
+seasonButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const selectedSeason = button.id;
+
+        booksSeason.forEach((card) => {
+            card.classList.remove("visible");
+        });
+
+        const selectedSeasonCards = document.querySelectorAll(`.books__season.${selectedSeason}`);
+        selectedSeasonCards.forEach((card) => {
+            card.classList.add("visible");
+        });
+    });
+});
