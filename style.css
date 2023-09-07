@@ -10,7 +10,7 @@ body {
 .button-primary:hover {
   border-radius: 2px;
   border: 1px solid #bb945f;
-  background: #bb945f;
+  background-color: #bb945f;
   cursor: pointer;
 }
 
@@ -44,6 +44,7 @@ h1 {
 
 .nav-container {
   gap: 40px;
+  position: relative;
 }
 
 .nav__list {
@@ -68,6 +69,56 @@ h1 {
 .burger-icon,
 .burger-menu {
   display: none;
+}
+
+/* Dropmenu */
+
+.dropmenuprofile {
+  background: #fff;
+  width: 80px;
+  height: 115px;
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+  top: 40px;
+  display: none;
+}
+
+.dropmenuprofile__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 5px;
+}
+.dropmenuprofile__title::after {
+  display: block;
+  content: "";
+  width: 40px;
+  height: 1px;
+  margin: 5px auto 0px auto;
+  background-color: #bb945f;
+}
+
+.dropmenuprofile__list {
+  margin-top: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropmenuprofile__list-item {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
 }
 
 /* Section Welcome */
@@ -162,7 +213,7 @@ h2::after {
   position: relative;
   left: 0;
   margin: auto;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
 
 .slider-image {
@@ -268,7 +319,6 @@ h2::after {
 }
 
 .books__card {
-
   width: 550px;
   height: 555px;
   flex-shrink: 0;
@@ -818,6 +868,11 @@ h3 {
   .nav {
     display: none;
   }
+  /* Dropmenu */
+  .dropmenuprofile {
+    right: 125px;
+    top: 30px;
+  }
 
   /* Burger */
   .burger-icon {
@@ -922,11 +977,11 @@ h3 {
   }
 
   @keyframes move-left {
-    from {}
+    from {
+    }
   }
 
   .transition-right {
-
   }
 
   /* Favorites */

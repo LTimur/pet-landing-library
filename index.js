@@ -7,6 +7,7 @@ let burgerMenu = document.querySelector(".burger-menu");
 burgerMenu.style.display = "none";
 
 function openBurgerMenu() {
+  dropMenu.style.display = "none";
   burgerMenu.style.display = "block";
   burgerMenu.classList.remove("roll-up-animation");
   burgerMenu.classList.add("roll-down-animation");
@@ -22,6 +23,23 @@ function closeBurgerMenu() {
 
 burgerOpenButton.addEventListener("click", openBurgerMenu);
 burgerCloseButton.addEventListener("click", closeBurgerMenu);
+
+// Dropmenu
+const profileButtons = document.querySelectorAll(".icon-profile");
+let dropMenu = document.querySelector(".dropmenuprofile");
+
+function toggleDropmenu() {
+  closeBurgerMenu()
+  if (dropMenu.style.display === "none") {
+    dropMenu.style.display = "block";
+  } else {
+    dropMenu.style.display = "none";
+  }
+}
+
+profileButtons.forEach((button, index) => {
+  button.addEventListener('click', toggleDropmenu);
+});
 
 // Slider
 const sliderLeftButton = document.querySelector(".slider-leftbutton");
@@ -105,3 +123,4 @@ seasonButtons.forEach((button) => {
         });
     });
 });
+
