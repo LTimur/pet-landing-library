@@ -30,16 +30,64 @@ let dropMenu = document.querySelector(".dropmenuprofile");
 
 function toggleDropmenu() {
   closeBurgerMenu()
-  if (dropMenu.style.display === "none") {
+  if (dropMenu.style.display === "none" || dropMenu.style.display === "" ) {
     dropMenu.style.display = "block";
   } else {
     dropMenu.style.display = "none";
   }
 }
 
-profileButtons.forEach((button, index) => {
+profileButtons.forEach((button) => {
   button.addEventListener('click', toggleDropmenu);
 });
+
+
+// Modal
+const overlay = document.getElementById('overlay');
+const registerOpenButtons = document.querySelectorAll(".registerbutton");
+const loginOpenButtons = document.querySelectorAll(".loginbutton");
+const registerCloseButton = document.querySelector(".register__closebutton");
+const loginCloseButton = document.querySelector(".login__closebutton");
+
+const registerModal = document.querySelector(".register");
+const loginModal = document.querySelector(".login");
+
+function showLoginModal() {
+  registerModal.style.display = "none";
+  overlay.style.display = 'flex';
+  loginModal.style.display = "block";
+  dropMenu.style.display = "none";
+}
+function showRegisterModal() {
+  loginModal.style.display = "none";
+  overlay.style.display = 'flex';
+  registerModal.style.display = "block";
+  dropMenu.style.display = "none";
+}
+function closeLoginModal() {
+  loginModal.style.display = "none";
+  overlay.style.display = 'none';
+}
+function closeRegisterModal() {
+  registerModal.style.display = "none";
+  overlay.style.display = 'none';
+}
+
+registerOpenButtons.forEach((button) => {
+  button.addEventListener("click", showRegisterModal);
+});
+loginOpenButtons.forEach((button) => {
+  button.addEventListener("click", showLoginModal);
+});
+overlay.addEventListener('click', (event) => {
+  if (event.target === overlay) {
+    loginModal.style.display = 'none';
+    registerModal.style.display = 'none';
+    overlay.style.display = 'none';
+  }
+});
+registerCloseButton.addEventListener("click", closeRegisterModal);
+loginCloseButton.addEventListener("click", closeLoginModal);
 
 // Slider
 const sliderLeftButton = document.querySelector(".slider-leftbutton");

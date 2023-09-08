@@ -52,8 +52,8 @@
             <div class="dropmenuprofile noauth">
                 <p class="dropmenuprofile__title">Profile</p>
                 <ul class="dropmenuprofile__list">
-                    <li class="dropmenuprofile__list-item">Log In</li>
-                    <li class="dropmenuprofile__list-item">Register</li>
+                    <li class="dropmenuprofile__list-item loginbutton">Log In</li>
+                    <li class="dropmenuprofile__list-item registerbutton">Register</li>
                 </ul>
             </div>
             <div class="dropmenuprofile withauth hidden">
@@ -107,6 +107,64 @@
 
     </header>
     <main>
+        <div class="modal login hidden">
+            <div class="modal login__content">
+                <p class="modal login__title">LOGIN</p>
+                <svg class="modal login__closebutton" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 16.8507L17 2.00003" stroke="#0C0C0E" stroke-width="3" />
+                    <path d="M2 2.14926L17 17" stroke="#0C0C0E" stroke-width="3" />
+                </svg>
+                <form action="#" class="modal login__form">
+                    <label class="modal login__form-label" for="email">E-mail or readers card
+                    </label>
+                    <input class="modal login__form-input" type="text" name="email" id="email" pattern="[a-zA-Z0-9-]*"
+                        required>
+                    <label class="modal login__form-label" for="password">Password
+                    </label>
+                    <input class="modal login__form-input" type="text" name="password" id="password"
+                        pattern="[a-zA-Z0-9-]*" required>
+                    <button class="modal login__form-button button-primary">Log In</button>
+                </form>
+                <div class="modal login__form-textcontainer">
+                    <p class="modal login__form-text">Don’t have an account?</p>
+                    <p class="modal login__form-textbutton registerbutton">Register</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal register hidden">
+            <div class="modal register__content">
+                <p class="modal register__title">register</p>
+                <svg class="modal register__closebutton" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 16.8507L17 2.00003" stroke="#0C0C0E" stroke-width="3" />
+                    <path d="M2 2.14926L17 17" stroke="#0C0C0E" stroke-width="3" />
+                </svg>
+                <form action="#" class="modal register__form">
+                    <label class="modal register__form-label" for="firstname">First name</label>
+                    <input class="modal register__form-input" type="text" name="firstname" id="firstname"
+                        pattern="[a-zA-Z0-9-]*" required>
+                    <label class="modal register__form-label" for="lastname">Last name</label>
+                    <input class="modal register__form-input" type="text" name="lastname" id="lastname"
+                        pattern="[a-zA-Z0-9-]*" required>
+                    <label class="modal register__form-label" for="email">E-mail</label>
+                    <input class="modal register__form-input" type="email" name="email" id="email"
+                        pattern="[a-zA-Z0-9-]*" required>
+                    <label class="modal register__form-label" for="password">Password</label>
+                    <input class="modal register__form-input" type="text" name="password" id="password"
+                    pattern=".{8,}" required>
+                    <button class="modal register__form-button button-primary">Log In</button>
+                </form>
+                <div class="modal register__form-textcontainer">
+                    <p class="modal register__form-text">Already have an account?</p>
+                    <p class="modal register__form-textbutton loginbutton">Login</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+
         <section class="welcome">
             <p class="welcome__text">
                 Welcome <br>
@@ -640,8 +698,8 @@
                     <p class="login__text">You will be able to see a reader card after logging into account or you can
                         register a new account</p>
                     <div class="login__buttons">
-                        <button class="login__signupbutton button-primary">Sign Up</button>
-                        <button class="login__loginbutton button-primary">Log in</button>
+                        <button class="login__signupbutton button-primary registerbutton">Sign Up</button>
+                        <button class="login__loginbutton button-primary loginbutton">Log in</button>
                     </div>
                 </div>
             </div>

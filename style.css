@@ -8,10 +8,142 @@ body {
 }
 
 .button-primary:hover {
-  border-radius: 2px;
+  border-radius: 2px !important;
+  border: 1px solid #bb945f !important;
+  background-color: #bb945f !important;
+  cursor: pointer !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Modal Login*/
+.modal.login,
+.modal.register {
+  width: 250px;
+  height: 262px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 2;
+}
+
+.modal.login__content,
+.modal.register__content {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 20px 25px;
+
+  .modal.login__title,
+  .modal.register__title {
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .modal.login__closebutton,
+  .modal.register__closebutton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  .modal.login__form-textcontainer,
+  .modal.register__form-textcontainer {
+    display: flex;
+    gap: 10px;
+
+    .modal.login__form-text,
+    .modal.register__form-text {
+      color: #000;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .modal.login__form-textbutton,
+    .modal.register__form-textbutton {
+      color: #0c0c0e;
+      text-align: center;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal.login__form,
+.modal.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal.login__form-label,
+.modal.register__form-label {
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.modal.login__form-input,
+.modal.register__form-input {
   border: 1px solid #bb945f;
-  background-color: #bb945f;
-  cursor: pointer;
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.modal.login__form-button,
+.modal.register__form-button {
+  width: 75px;
+  height: 30px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  background-color: #fff;
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+/* Modal Register*/
+.modal.register {
+  width: 250px;
+  height: 382px;
 }
 
 /* Header */
@@ -30,7 +162,7 @@ h1 {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
   letter-spacing: 0.6px;
   margin-left: 20px;
 }
@@ -57,7 +189,7 @@ h1 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 250% */
+  line-height: 50px;
   text-decoration: none;
 }
 
@@ -135,7 +267,7 @@ h1 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 125% */
+  line-height: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
   background-color: black;
@@ -161,7 +293,7 @@ h2 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   text-align: center;
@@ -185,7 +317,7 @@ h2::after {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
 }
 
 .slider {
@@ -340,7 +472,7 @@ h2::after {
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 266.667% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 20px;
@@ -352,7 +484,7 @@ h2::after {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   position: relative;
@@ -387,7 +519,7 @@ h3 {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 266.667% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   width: 355px;
@@ -460,7 +592,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   margin-top: 40px;
@@ -490,7 +622,7 @@ h3 {
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -530,7 +662,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -541,7 +673,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -569,7 +701,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
   text-decoration: none;
@@ -581,7 +713,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -652,7 +784,7 @@ h3 {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
   letter-spacing: 0.6px;
   margin: 20px 0 0 20px;
 }
@@ -669,7 +801,7 @@ h3 {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
   letter-spacing: 0.6px;
 
   border-radius: 10px;
@@ -687,7 +819,7 @@ h3 {
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px; /* 166.667% */
+  line-height: 50px;
   letter-spacing: 0.6px;
 }
 
@@ -733,7 +865,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px; /* 200% */
+  line-height: 40px;
   letter-spacing: 0.4px;
   margin-top: 35px;
 }
@@ -793,7 +925,7 @@ h3 {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 133.333% */
+  line-height: 20px;
   width: 229px;
   flex-shrink: 0;
   text-decoration: none;
@@ -816,7 +948,7 @@ h3 {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 133.333% */
+  line-height: 20px;
 }
 
 .footer__line {
@@ -844,7 +976,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 100% */
+  line-height: 20px;
   letter-spacing: 2px;
   text-decoration: none;
 }
@@ -868,6 +1000,13 @@ h3 {
   .nav {
     display: none;
   }
+
+  /* Modal Login*/
+  .modal.login,
+  .modal.register {
+    top: 15%;
+  }
+
   /* Dropmenu */
   .dropmenuprofile {
     right: 125px;
